@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="editButton">editButton</string>
+    <string name="listView">listView</string>
+    <string name="hello">Hello</string>
+    <string name="time">2022–12-24</string>
+    <string name="gridview">gridview</string>
+    <string name="title">title</string>
+    <string name="rv_btn1">列表视图</string>
+    <string name="rv_btn2">水平视图</string>
+    <string name="recyclerView">recyclerView</string>
+    <string name="rv_btn3">Grid视图</string>
+    <string name="rv_btn4">瀑布视图</string>
+</resources>

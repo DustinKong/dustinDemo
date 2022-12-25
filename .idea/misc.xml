@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2786458333333333" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.415625" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_edit_text.xml" value="0.22708333333333333" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_grid_item.xml" value="0.2390625" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_grid_recycler_view.xml" value="0.28958333333333336" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_grid_view.xml" value="0.2390625" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_hor_recycler_view.xml" value="0.2859375" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_linear_recycler_view.xml" value="0.32135416666666666" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_listview.xml" value="0.264" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_pu_recycler_view.xml" value="0.27708333333333335" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/activity_recycler_view.xml" value="0.32135416666666666" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/layout_grid_item.xml" value="0.29181654676258995" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/layout_grid_recycler_item.xml" value="0.28958333333333336" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/layout_hor_item.xml" value="0.2859375" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/layout_linear_item.xml" value="0.32135416666666666" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/layout_linear_item2.xml" value="0.39947916666666666" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/layout_list_item.xml" value="0.39947916666666666" />
+        <entry key="..\:/flutter_project/dustinDemo/app/src/main/res/layout/layout_stagger_recycler_item.xml" value="0.27708333333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
