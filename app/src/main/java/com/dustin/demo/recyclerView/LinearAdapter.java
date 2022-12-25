@@ -14,6 +14,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.dustin.demo.R;
 
+
+/**
+* <h3>LinearAdapter extends MyViewHolder extends RecyclerView.ViewHolder</h3>
+* <ul>利用viewType，让文字和图片交叉显示</ul>
+*
+* */
 public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.MyViewHolder> {
 
     private Context mContext;

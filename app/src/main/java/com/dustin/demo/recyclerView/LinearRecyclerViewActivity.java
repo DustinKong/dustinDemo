@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import com.dustin.demo.R;
 
+//创建了一个线性的RecyclerView布局，内置的Adapter写在外部LinearAdapter
+
 public class LinearRecyclerViewActivity extends AppCompatActivity {
 
     private RecyclerView mRvMain;
