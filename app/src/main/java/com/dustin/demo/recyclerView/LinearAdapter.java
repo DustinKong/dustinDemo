@@ -10,16 +10,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.dustin.demo.R;
 
-
 /**
-* <h3>LinearAdapter extends MyViewHolder extends RecyclerView.ViewHolder</h3>
-* <ul>利用viewType，让文字和图片交叉显示</ul>
-*
-* */
+ * 自定义了一个Adapter
+ * <h3>LinearAdapter extends MyViewHolder extends RecyclerView.ViewHolder</h3>
+ * 利用viewType，让文字和图片交叉显示
+ */
 public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.MyViewHolder> {
 
     private Context mContext;
@@ -30,10 +30,18 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.MyViewHold
         public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
             super.onScrolled(recyclerView, dx, dy);
             Log.d("kqc", String.valueOf(dy));
-            // your code here
+            LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
+            if (layoutManager == null) {
+                throw new AssertionError();
+            }
+            int firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition();
+            Log.d("kqc", "First visible item position: " + firstVisibleItemPosition);
+
+            int lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition();
+            Log.d("kqc", "Last visible item position: " + lastVisibleItemPosition);
         }
     };
-
+    //初始化时把这个监听click的listener传入，可以在外部监听click
     public LinearAdapter(Context context, OnItemClickListener listener) {
         this.mlistener = listener;
         this.mContext = context;
@@ -48,6 +56,7 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.MyViewHold
             return new LinearViewHolder2(LayoutInflater.from(mContext).inflate(R.layout.layout_linear_item2, parent, false));
         }
     }
+
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
@@ -101,6 +110,7 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.MyViewHold
 
     class LinearViewHolder extends MyViewHolder {
         private final TextView textView;
+
         public LinearViewHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.tv_title);
@@ -110,6 +120,7 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.MyViewHold
 
     class LinearViewHolder2 extends MyViewHolder {
         private ImageView imageView;
+
         public LinearViewHolder2(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.iv_image);

@@ -13,8 +13,9 @@ import android.widget.Toast;
 
 import com.dustin.demo.R;
 
-//创建了一个线性的RecyclerView布局，内置的Adapter写在外部LinearAdapter
-
+/**
+ * 创建了一个线性的RecyclerView布局，内置的Adapter写在外部LinearAdapter
+ **/
 public class LinearRecyclerViewActivity extends AppCompatActivity {
 
     private RecyclerView mRvMain;
@@ -31,7 +32,8 @@ public class LinearRecyclerViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linear_recycler_view);
-        adapter=new LinearAdapter(LinearRecyclerViewActivity.this, new LinearAdapter.OnItemClickListener() {
+        adapter = new LinearAdapter(LinearRecyclerViewActivity.this, new LinearAdapter.OnItemClickListener() {
+            //这里通过LinearAdapter的interface接口，在这里重写onClick事件
             @Override
             public void onClick(int pos) {
                 Toast.makeText(LinearRecyclerViewActivity.this, "click" + pos, Toast.LENGTH_SHORT).show();
