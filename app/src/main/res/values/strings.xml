@@ -12,7 +12,8 @@
     <string name="rv_btn3">Grid视图</string>
     <string name="rv_btn4">瀑布视图</string>
     <string name="ui">UI</string>
-    <string name="dialog_btn1">dialog_btn1</string>
-    <string name="dialog_btn2">dialog_btn2</string>
+    <string name="dialog_btn1">普通dialog</string>
+    <string name="dialog_btn2">单选dialog</string>
     <string name="dialog_view">dialog_view</string>
+    <string name="dialog_btn3">多选dialog</string>
 </resources>
