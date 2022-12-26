@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".DialogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UIActivity"
+            android:exported="true" />
+        <activity
             android:name=".recyclerView.PuRecyclerViewActivity"
             android:exported="true" />
         <activity

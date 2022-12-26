@@ -2,16 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingHorizontal="15dp"
-    >
+    android:orientation="vertical">
 
     <Button
-        android:paddingHorizontal="10dp"
-        android:id="@+id/btn_ui"
+        android:id="@+id/dialog_btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ui"
-        />
+        android:text="@string/dialog_btn1" />
+
+    <Button
+        android:id="@+id/dialog_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_btn2" />
 
 </LinearLayout>
